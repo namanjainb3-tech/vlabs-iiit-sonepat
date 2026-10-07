@@ -15,5 +15,18 @@ import { step as s13 } from "./13-falling-edge-again";
 import { step as s14 } from "./14-rising-edge-set-again";
 
 export const procedureSteps: SceneProcedureStep[] = [
-  s01, s02, s03, s04, s05, s06, s07, s08, s09, s10, s11, s12, s13, s14,
+  s01,
+  s02,
+  s03,
+  s04,
+  s05,
+  s06,
+  s07,
+  s08,
+  s09,
+  s10,
+  s11,
+  s12,
+  s13,
+  s14,
 ];

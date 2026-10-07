@@ -8,7 +8,14 @@ export const observations: LabSection = {
     "Data inputs are held at $I_0 = 0,\\ I_1 = 1,\\ I_2 = 1,\\ I_3 = 0$. Set the select lines and record the output and LED state.",
   ],
   table: {
-    headers: ["S1", "S0", "Input selected", "Y (expected)", "LED state", "Y (observed)"],
+    headers: [
+      "S1",
+      "S0",
+      "Input selected",
+      "Y (expected)",
+      "LED state",
+      "Y (observed)",
+    ],
     rows: [
       ["0", "0", "I0", "0", "OFF", ""],
       ["0", "1", "I1", "1", "ON", ""],

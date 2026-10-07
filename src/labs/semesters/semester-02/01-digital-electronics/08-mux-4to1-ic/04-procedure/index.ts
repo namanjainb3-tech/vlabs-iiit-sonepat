@@ -11,5 +11,14 @@ import { step as s09 } from "./09-test-10";
 import { step as s10 } from "./10-test-11";
 
 export const procedureSteps: SceneProcedureStep[] = [
-  s01, s02, s03, s04, s05, s06, s07, s08, s09, s10,
+  s01,
+  s02,
+  s03,
+  s04,
+  s05,
+  s06,
+  s07,
+  s08,
+  s09,
+  s10,
 ];

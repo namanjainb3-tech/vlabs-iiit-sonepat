@@ -13,5 +13,16 @@ import { step as s11 } from "./11-test-11";
 import { step as s12 } from "./12-test-data-high";
 
 export const procedureSteps: SceneProcedureStep[] = [
-  s01, s02, s03, s04, s05, s06, s07, s08, s09, s10, s11, s12,
+  s01,
+  s02,
+  s03,
+  s04,
+  s05,
+  s06,
+  s07,
+  s08,
+  s09,
+  s10,
+  s11,
+  s12,
 ];

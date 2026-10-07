@@ -31,4 +31,6 @@ export const multiplexer4to1Experiment: ExperimentDefinition = {
 };
 
 export const Multiplexer4to1Circuit = buildCircuit(multiplexer4to1Experiment);
-export const Multiplexer4to1Content = buildLabContent(multiplexer4to1Experiment);
+export const Multiplexer4to1Content = buildLabContent(
+  multiplexer4to1Experiment,
+);

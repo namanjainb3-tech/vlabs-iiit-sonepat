@@ -10,6 +10,6 @@ export const theory: LabSection = {
     "The characteristic equation of a JK flip-flop is Q(next) = JQ̅ + K̅Q.",
     "A T flip-flop has a single input T. When T=0, the previous state is retained. When T=1, the output toggles on the active clock edge.",
     "A T flip-flop can be constructed from a JK flip-flop by connecting J and K together and using the common connection as the T input. Thus, J=K=T.",
-    "For the T flip-flop, Q(next) = T ⊕ Q."
+    "For the T flip-flop, Q(next) = T ⊕ Q.",
   ],
 };

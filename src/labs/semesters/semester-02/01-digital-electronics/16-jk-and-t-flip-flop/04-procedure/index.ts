@@ -18,5 +18,5 @@ export const procedureSteps: SceneProcedureStep[] = [
   s06,
   s07,
   s08,
-  s09
+  s09,
 ];

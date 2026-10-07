@@ -22,17 +22,45 @@ export const demultiplexer1to4Experiment: ExperimentDefinition = {
     inputs: ["S1", "S0", "D"],
     outputs: ["Y0", "Y1", "Y2", "Y3"],
     rows: [
-      { inputs: { S1: 0, S0: 0, D: 0 }, outputs: { Y0: 0, Y1: 1, Y2: 1, Y3: 1 } },
-      { inputs: { S1: 0, S0: 0, D: 1 }, outputs: { Y0: 1, Y1: 1, Y2: 1, Y3: 1 } },
-      { inputs: { S1: 0, S0: 1, D: 0 }, outputs: { Y0: 1, Y1: 0, Y2: 1, Y3: 1 } },
-      { inputs: { S1: 0, S0: 1, D: 1 }, outputs: { Y0: 1, Y1: 1, Y2: 1, Y3: 1 } },
-      { inputs: { S1: 1, S0: 0, D: 0 }, outputs: { Y0: 1, Y1: 1, Y2: 0, Y3: 1 } },
-      { inputs: { S1: 1, S0: 0, D: 1 }, outputs: { Y0: 1, Y1: 1, Y2: 1, Y3: 1 } },
-      { inputs: { S1: 1, S0: 1, D: 0 }, outputs: { Y0: 1, Y1: 1, Y2: 1, Y3: 0 } },
-      { inputs: { S1: 1, S0: 1, D: 1 }, outputs: { Y0: 1, Y1: 1, Y2: 1, Y3: 1 } },
+      {
+        inputs: { S1: 0, S0: 0, D: 0 },
+        outputs: { Y0: 0, Y1: 1, Y2: 1, Y3: 1 },
+      },
+      {
+        inputs: { S1: 0, S0: 0, D: 1 },
+        outputs: { Y0: 1, Y1: 1, Y2: 1, Y3: 1 },
+      },
+      {
+        inputs: { S1: 0, S0: 1, D: 0 },
+        outputs: { Y0: 1, Y1: 0, Y2: 1, Y3: 1 },
+      },
+      {
+        inputs: { S1: 0, S0: 1, D: 1 },
+        outputs: { Y0: 1, Y1: 1, Y2: 1, Y3: 1 },
+      },
+      {
+        inputs: { S1: 1, S0: 0, D: 0 },
+        outputs: { Y0: 1, Y1: 1, Y2: 0, Y3: 1 },
+      },
+      {
+        inputs: { S1: 1, S0: 0, D: 1 },
+        outputs: { Y0: 1, Y1: 1, Y2: 1, Y3: 1 },
+      },
+      {
+        inputs: { S1: 1, S0: 1, D: 0 },
+        outputs: { Y0: 1, Y1: 1, Y2: 1, Y3: 0 },
+      },
+      {
+        inputs: { S1: 1, S0: 1, D: 1 },
+        outputs: { Y0: 1, Y1: 1, Y2: 1, Y3: 1 },
+      },
     ],
   },
 };
 
-export const Demultiplexer1to4Circuit = buildCircuit(demultiplexer1to4Experiment);
-export const Demultiplexer1to4Content = buildLabContent(demultiplexer1to4Experiment);
+export const Demultiplexer1to4Circuit = buildCircuit(
+  demultiplexer1to4Experiment,
+);
+export const Demultiplexer1to4Content = buildLabContent(
+  demultiplexer1to4Experiment,
+);

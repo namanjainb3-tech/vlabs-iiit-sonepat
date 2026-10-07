@@ -24,7 +24,7 @@ export const jkAndTFlipFlopExperiment: ExperimentDefinition = {
       { inputs: { J: 0, K: 0 }, outputs: { Q: 0 } },
       { inputs: { J: 0, K: 1 }, outputs: { Q: 0 } },
       { inputs: { J: 1, K: 0 }, outputs: { Q: 1 } },
-      { inputs: { J: 1, K: 1 }, outputs: { Q: 1 } }
+      { inputs: { J: 1, K: 1 }, outputs: { Q: 1 } },
     ],
   },
 };

@@ -20,66 +20,100 @@ export const components: ComponentInstance[] = [
       { board: "bb", rail: "gnd_top", col: 5 },
     ],
   },
-  { id: "mux1", type: "mux-4to1", mountedAt: { board: "bb", col: 8, row: "e" } },
+  {
+    id: "mux1",
+    type: "mux-4to1",
+    mountedAt: { board: "bb", col: 8, row: "e" },
+  },
 
   // output stage
-  { id: "r_y", type: "resistor", ohms: 330, mountedAt: { board: "bb", col: 18, row: "c" } },
-  { id: "led_y", type: "led", color: "green", mountedAt: { board: "bb", col: 20, row: "c" } },
+  {
+    id: "r_y",
+    type: "resistor",
+    ohms: 330,
+    mountedAt: { board: "bb", col: 18, row: "c" },
+  },
+  {
+    id: "led_y",
+    type: "led",
+    color: "green",
+    mountedAt: { board: "bb", col: 20, row: "c" },
+  },
 
   // enable tied LOW
   {
-    id: "w_en", type: "wire", color: "black",
+    id: "w_en",
+    type: "wire",
+    color: "black",
     from: { ic: "mux1", pin: "1G" },
     to: { board: "bb", rail: "gnd_top", col: 8 },
   },
 
   // data inputs
   {
-    id: "w_i0", type: "wire", color: "black",
+    id: "w_i0",
+    type: "wire",
+    color: "black",
     from: { board: "bb", rail: "gnd_top", col: 10 },
     to: { ic: "mux1", pin: "1C0" },
   },
   {
-    id: "w_i1", type: "wire", color: "white",
+    id: "w_i1",
+    type: "wire",
+    color: "white",
     from: { board: "bb", rail: "vcc_top", col: 11 },
     to: { ic: "mux1", pin: "1C1" },
   },
   {
-    id: "w_i2", type: "wire", color: "white",
+    id: "w_i2",
+    type: "wire",
+    color: "white",
     from: { board: "bb", rail: "vcc_top", col: 12 },
     to: { ic: "mux1", pin: "1C2" },
   },
   {
-    id: "w_i3", type: "wire", color: "black",
+    id: "w_i3",
+    type: "wire",
+    color: "black",
     from: { board: "bb", rail: "gnd_top", col: 13 },
     to: { ic: "mux1", pin: "1C3" },
   },
 
   // select lines
   {
-    id: "w_s0", type: "wire", color: "red",
+    id: "w_s0",
+    type: "wire",
+    color: "red",
     from: { board: "bb", col: 2, row: "a" },
     to: { ic: "mux1", pin: "S0" },
   },
   {
-    id: "w_s1", type: "wire", color: "blue",
+    id: "w_s1",
+    type: "wire",
+    color: "blue",
     from: { board: "bb", col: 3, row: "a" },
     to: { ic: "mux1", pin: "S1" },
   },
 
   // output
   {
-    id: "w_y_r", type: "wire", color: "green",
+    id: "w_y_r",
+    type: "wire",
+    color: "green",
     from: { ic: "mux1", pin: "1Y" },
     to: { component: "r_y", end: "p1" },
   },
   {
-    id: "w_r_led", type: "wire", color: "green",
+    id: "w_r_led",
+    type: "wire",
+    color: "green",
     from: { component: "r_y", end: "p2" },
     to: { led: "led_y", end: "anode" },
   },
   {
-    id: "w_gnd_led", type: "wire", color: "black",
+    id: "w_gnd_led",
+    type: "wire",
+    color: "black",
     from: { led: "led_y", end: "cathode" },
     to: { board: "bb", rail: "gnd_top", col: 1 },
   },
